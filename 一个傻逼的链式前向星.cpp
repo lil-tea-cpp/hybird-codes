@@ -1,4 +1,4 @@
-constexpr std::size_t max_vtces = 1uz << 11;
+constexpr std::size_t k_max_vtces = 1uz << 11;
 
 class	edge;
 
@@ -13,7 +13,7 @@ public:
 	std::size_t nxt_;
 };
 
-vtx v[max_vtces];
+vtx v[k_max_vtces];
 std::vector<edge> e(1uz);
 
 void	add_edge(vtx *x, vtx *y) {
